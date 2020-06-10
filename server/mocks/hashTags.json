@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "valueRu": "лига-легенд",
+    "valueEn": "league_of_legends"
+  },
+  {
+    "id": 2,
+    "valueRu": "хасаги-репорт-лес",
+    "valueEn": "jungle_report"
+  },
+  {
+    "id": 3,
+    "valueRu": "фэнтези",
+    "valueEn": "fantasy"
+  },
+  {
+    "id": 4,
+    "valueRu": "сложно",
+    "valueEn": "hard"
+  }
+]

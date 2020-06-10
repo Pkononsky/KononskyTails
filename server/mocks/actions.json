@@ -1,0 +1,53 @@
+[
+  {
+    "action": "DS sit at bonfire",
+    "nextScene": "DS relax at bonfire",
+    "actionRu": "Отдохнуть у костра"
+  },
+  {
+    "action": "DS move on",
+    "nextScene": "DS castle turn",
+    "actionRu": "Двигаться дальше"
+  },
+  {
+    "action": "DS left",
+    "nextScene": "DS boss appearance",
+    "actionRu": "Налево"
+  },
+  {
+    "action": "DS right",
+    "nextScene": "DS chest",
+    "actionRu": "Направо"
+  },
+  {
+    "action": "DS roll",
+    "nextScene": "DS taurus roll",
+    "actionRu": "Перекат!"
+  },
+  {
+    "action": "DS attack",
+    "nextScene": "DS death taurus",
+    "actionRu": "Ударить!"
+  },
+  {
+    "action": "DS next",
+    "nextScene": "DS death",
+    "actionRu": "Дальше"
+  },
+  {
+    "action": "DS open chest",
+    "nextScene": "DS chest death",
+    "actionRu": "Открыть сундук"
+  },
+
+  {
+    "action": "TES awake",
+    "nextScene": "TES awake",
+    "actionRu": "Дальше"
+  },
+  {
+    "action": "TES horse ride",
+    "nextScene": "TES horse ride",
+    "actionRu": "Дальше"
+  }
+]

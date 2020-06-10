@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home-page {
+  display: grid;
+  grid-template-columns: 150px auto 300px;
+  grid-template-rows: 75px auto;
+  grid-gap: 15px;
+}
+
+.logo {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  border-bottom: 1px gray solid;
+  padding: 10px 0 10px 90px;
+  display: flex;
+}
+
+.logo__picture {
+  width: 55px;
+  height: 55px;
+}
+
+.home_page__adventures {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo__companyName {
+  font-size: 300%;
+  color: black;
+}
+
+.logo__firstHalf {
+  color: hotpink;
+}
+
+.adventure {
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 250px;
+  grid-gap: 15px;
+}
+
+.adventure__img {
+  display: flex;
+  margin: auto;
+  grid-column: 1;
+  grid-row: 1 / 2;
+  width: 250px;
+}
+
+.adventure__texts {
+  grid-column: 2;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.adventure__title,
+.adventure__description {
+  font-family: 'Gabriela', serif;
+  min-width: 400px;
+  max-width: 650px;
+  font-size: 125%;
+  color: black;
+  margin: 15px 0;
+}
+
+.adventure__title {
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.adventure__hashTags {
+  display: flex;
+  height: 40px;
+}
+
+.adventure__hashTag {
+  height: 40px;
+  padding: 0 10px;
+  margin-right: 5px;
+  background: darkgray;
+  border-radius: 10%;
+  display: flex;
+}
+
+.adventure__hashTag-text {
+  color: white;
+  margin: auto;
+}

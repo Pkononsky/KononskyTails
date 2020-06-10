@@ -1,0 +1,63 @@
+[
+  {
+    "adventureName": "Dark Souls",
+    "picture": "https://3dnews.ru/assets/external/illustrations/2018/01/11/963983/DarkSoulsRemastered_screen.jpg",
+    "firstScene": "DS bonfire lit",
+    "hashTags": [3, 4]
+  },
+  {
+    "adventureName": "The Elder Scrolls V: Skyrim",
+    "picture": "https://www.rpgnuke.ru/wp-content/uploads/2011/07/24234698757834145476485432453265767637-678x381.jpg",
+    "description": "Братья Бури, во главе с ветераном войны Ульфриком Буревестником устраивают мятеж против власти Империи. Ульфрик убивает верховного короля провинции Торуга, но вскоре попадает в засаду имперцев. Вместе с Ульфриком и другими мятежниками вас везут на казнь в крепость Хелген.",
+    "firstScene": "TES sleep",
+    "hashTags": [3]
+  },
+  {
+    "adventureName": "Приключение без тегов, описания и картинки",
+    "firstScene": "TEST"
+  },
+  {
+    "adventureName": "Приключение без тегов, описания и картинки 2",
+    "firstScene": "TEST"
+  },
+  {
+    "adventureName": "Приключение без тегов, описания и картинки 3",
+    "firstScene": "TEST"
+  },
+  {
+    "adventureName": "Приключение без тегов, описания и картинки 4",
+    "firstScene": "TEST"
+  },
+  {
+    "adventureName": "Приключение без тегов, описания и картинки 5",
+    "firstScene": "TEST"
+  },
+  {
+    "adventureName": "Приключение без тегов, описания и картинки 6",
+    "firstScene": "TEST"
+  },
+  {
+    "adventureName": "Приключение без тегов, описания и картинки 7",
+    "firstScene": "TEST"
+  },
+  {
+    "adventureName": "Фентези 1",
+    "firstScene": "TEST",
+    "hashTags": [3]
+  },
+  {
+    "adventureName": "Фентези 2",
+    "firstScene": "TEST",
+    "hashTags": [3]
+  },
+  {
+    "adventureName": "Фентези 3",
+    "firstScene": "TEST",
+    "hashTags": [3]
+  },
+  {
+    "adventureName": "Фентези 4",
+    "firstScene": "TEST",
+    "hashTags": [3]
+  }
+]

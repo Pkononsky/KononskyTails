@@ -1,0 +1,87 @@
+{
+  "name": "pkononsky-task-2019",
+  "private": true,
+  "engines": {
+    "node": "13"
+  },
+  "scripts": {
+    "clean": "rimraf dist node_modules",
+    "build": "npm-run-all --parallel build:*",
+    "build:ts": "tsc",
+    "build:next": "next build",
+    "lint": "npm-run-all lint:*",
+    "lint:css": "stylelint pages/**/*.css",
+    "lint:es": "eslint --ext=.ts,.tsx server/ pages/ components/",
+    "lint:ts": "tsc --noEmit",
+    "deps:all": "npm ci",
+    "deps:production": "npm ci --production",
+    "dev": "tsc-watch --build tsconfig.server.json --preserveWatchOutput --pretty --onSuccess \"npm-run-all build:ts start\"",
+    "docker:build": "docker build -t pkononsky-task-2019 .",
+    "docker:run": "docker run -p 8080:80 pkononsky-task-2019",
+    "heroku:login": "heroku container:login",
+    "heroku:push": "heroku container:push web -a pkononsky-task-2019",
+    "heroku:release": "heroku container:release web -a pkononsky-task-2019",
+    "heroku:open": "heroku open -a pkononsky-task-2019",
+    "heroku:logs": "heroku logs --tail -a pkononsky-task-2019",
+    "heroku": "npm-run-all heroku:*",
+    "heroku-init": "heroku login && heroku create pkononsky-task-2019",
+    "start": "cross-env NODE_PATH=dist/server node dist/server || echo started",
+    "surge": "surge -p ./dist/client -d pkononsky-task-2019.surge.sh",
+    "deploy": "npm-run-all build surge heroku"
+  },
+  "dependencies": {
+    "@types/bluebird": "^3.5.30",
+    "@types/validator": "^12.0.1",
+    "@types/ws": "^7.2.3",
+    "body-parser": "1.19.0",
+    "config": "3.3.0",
+    "cross-env": "7.0.2",
+    "express": "4.17.1",
+    "hbs": "4.1.0",
+    "isomorphic-fetch": "2.2.1",
+    "minimist": "^1.2.5",
+    "morgan": "1.9.1",
+    "next": "9.3.4",
+    "pg": "^7.18.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-intersection-observer": "^8.26.1",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.21.5",
+    "sequelize-typescript": "^1.1.0",
+    "tslib": "^1.11.1",
+    "websocket": "^1.0.31",
+    "ws": "^7.2.3"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.36",
+    "@types/express": "4.17.3",
+    "@types/isomorphic-fetch": "0.0.35",
+    "@types/hbs": "4.0.1",
+    "@types/morgan": "1.9.0",
+    "@types/node": "13.7.7",
+    "@types/react": "16.9.33",
+    "@types/react-dom": "16.9.6",
+    "@typescript-eslint/eslint-plugin": "2.24.0",
+    "@typescript-eslint/parser": "2.24.0",
+    "copyfiles": "2.2.0",
+    "eslint": "6.8.0",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "3.0.0",
+    "husky": "4.2.3",
+    "npm-run-all": "4.1.5",
+    "rimraf": "3.0.2",
+    "stylelint": "13.2.1",
+    "stylelint-config-standard": "20.0.0",
+    "surge": "^0.21.3",
+    "tsc-watch": "4.2.3",
+    "typescript": "3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "npm run lint"
+      ]
+    }
+  }
+}

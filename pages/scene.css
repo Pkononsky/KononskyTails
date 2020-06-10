@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.scene-page {
+  display: grid;
+  grid-template-columns: auto 1000px auto;
+  grid-template-rows: 75px auto;
+  grid-gap: 15px;
+}
+
+.scene-page__content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 1000px;
+  grid-template-rows: auto auto 50px;
+  grid-gap: 15px;
+  height: auto;
+}
+
+.scene-page__picture {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  height: 400px;
+  display: flex;
+}
+
+.scene-page__img {
+  width: 1000px;
+  max-height: 400px;
+  margin: auto;
+  position: absolute;
+}
+
+.scene-page__description {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  color: white;
+  font-size: 125%;
+  position: relative;
+}
+
+.scene-page__description-text {
+  width: 250px;
+  margin: 10px;
+  position: absolute;
+}
+
+.black {
+  color: black;
+}
+
+.scene-page__start-again,
+.scene-page__buttons {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: center;
+}
+
+.scene-page__button {
+  background: dimgray;
+  border-radius: 5%;
+  margin: 0 10px;
+  padding: 0 10px;
+  display: flex;
+}
+
+.scene-page__button-text {
+  margin: auto;
+  color: white;
+  font-size: 150%;
+}
+
+.scene-page__achievements {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: row;
+}
+
+.scene-page__achievement {
+  width: 500px;
+  height: 150px;
+  display: flex;
+}
+
+.scene-page__achievement-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.scene-page__achievement-texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.scene-page__achievement-get,
+.scene-page__achievement-name {
+  margin: auto;
+  width: 350px;
+  color: black;
+  font-family: 'Gabriela', serif;
+  font-size: 250%;
+}
+
+.scene-page__achievement-get {
+  font-size: 125%;
+  width: 350px;
+}
+
+.UL {
+  top: 0;
+  left: 0;
+}
+
+.UR {
+  top: 0;
+  right: 0;
+}
+
+.DL {
+  bottom: 0;
+  left: 0;
+}
+
+.DR {
+  bottom: 0;
+  right: 0;
+}

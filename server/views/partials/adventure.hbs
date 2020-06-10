@@ -1,0 +1,38 @@
+{{#if adventureData.firstScene}}
+    <div class="adventure">
+        <meta class="adventure__meta" name="{{ adventureData.adventureName }}"/>
+        <div class="adventure__img">
+            {{#if adventureData.picture}}
+                <a href="/startAdventure/{{ adventureData.adventureName }}">
+                    <img src="{{ adventureData.picture }}" alt="adventure" class="adventure__img">
+                </a>
+            {{else}}
+                <a href="/startAdventure/{{ adventureData.adventureName }}">
+                    <img src="https://s1.1zoom.ru/big0/788/Lavandula_Fields_Blue_525422_1280x778.jpg" alt="adventure"
+                         class="adventure__img">
+                </a>
+            {{/if}}
+        </div>
+        <div class="adventure__texts">
+            <a class="adventure__title" href="/startAdventure/{{ adventureData.adventureName }}">
+                {{ adventureData.adventureName }}
+            </a>
+            {{#if adventureData.description}}
+                <p class="adventure__description">
+                    {{ adventureData.description }}
+                </p>
+            {{/if}}
+            {{#if hashTags}}
+                <div class="adventure__hashTags">
+                    {{#each hashTags}}
+                        <div class="adventure__hashTag">
+                            <a class="adventure__hashTag-text" onclick="resolveHashTagClick('{{this.valueEn}}')">
+                                #{{this.valueRu}}
+                            </a>
+                        </div>
+                    {{/each}}
+                </div>
+            {{/if}}
+        </div>
+    </div>
+{{/if}}

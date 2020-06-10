@@ -1,0 +1,85 @@
+[
+  {
+    "sceneName": "DS bonfire lit",
+    "picture": "https://3dnews.ru/assets/external/illustrations/2018/04/04/967976/Dark%20Souls%20Remastered%20Screen%202.jpg",
+    "actions": ["DS sit at bonfire", "DS move on"]
+  },
+  {
+    "sceneName": "DS relax at bonfire",
+    "picture": "https://i.playground.ru/p/lF6cBrPHWIc7MXzi8RsclA.jpeg",
+    "description": "В самом деле. Зачем подвергать свою жизнь опастности.",
+    "descriptionPos": "UL",
+    "achievements": [2, 3]
+  },
+  {
+    "sceneName": "DS castle turn",
+    "picture": "https://static-eu.insales.ru/images/products/1/3492/232140196/1.jpg",
+    "description": "Вы направились в сторону замка. Зайдя внутрь, вы обнаруживаете два прохода. Левый ведет на стену, правый в большой зал.",
+    "descriptionPos": "DL",
+    "actions": ["DS left", "DS right"]
+  },
+  {
+    "sceneName": "DS boss appearance",
+    "picture": "https://vgtimes.ru/uploads/posts/2018-05/1527694134_taurus_demon.jpg",
+    "description": "Вы поднялись на стену и обнаружили этого парня. Проход за вами закрыт стеной тумана. Видимо придется дать бой.",
+    "descriptionPos": "DL",
+    "actions": ["DS roll", "DS attack"]
+  },
+  {
+    "sceneName": "DS taurus roll",
+    "picture": "https://vgtimes.ru/uploads/posts/2018-05/1527694134_taurus_demon.jpg",
+    "description": "Вы делаете перекат.",
+    "descriptionPos": "RD",
+    "actions": ["DS roll", "DS attack"]
+  },
+  {
+    "sceneName": "DS death taurus",
+    "picture": "https://i.ytimg.com/vi/C4dM9SfS6XI/maxresdefault.jpg",
+    "description": "Вы бьете демона по одной ноге и не замечаете как он замахнулся второй. Удар был достаточно сильным, чтобы скинуть вас со стены.",
+    "descriptionPos": "UL",
+    "actions": ["DS next"]
+  },
+  {
+    "sceneName": "DS chest",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSUpVHJVnfA8Q561MFL4eUjuh8qjukOyeAWWEJ71MwhATgYfCVY",
+    "description": "Зал оказался весьма пустым, но в его глубине вы замечаете сундук. Открываем?",
+    "descriptionPos": "DL",
+    "actions": ["DS open chest"]
+  },
+  {
+    "sceneName": "DS chest death",
+    "picture": "https://vignette.wikia.nocookie.net/darksouls/images/b/be/%D0%9C%D0%B8%D0%BC%D0%B8%D0%BA.jpg/revision/latest/top-crop/width/360/height/450?cb=20130623231022&path-prefix=ru",
+    "description": "Сундук оказался мимиком.",
+    "descriptionPos": "UL",
+    "actions": ["DS next"]
+  },
+  {
+    "sceneName": "DS death",
+    "picture": "https://i.ytimg.com/vi/-ZGlaAxB7nI/maxresdefault.jpg",
+    "description": "Вы погибли.",
+    "descriptionPos": "UL",
+    "achievements": [1]
+  },
+
+  {
+    "sceneName": "TES sleep",
+    "description": "Вы просыпаетесь от толчков повозки.",
+    "actions": ["TES awake"]
+  },
+  {
+    "sceneName": "TES awake",
+    "picture": "https://i19.kanobu.ru/r/af79824f1123e0a4c765d374444d6dee/800x450/u.kanobu.ru/articles/pics/123f8251-f75b-4641-a621-5d66e18d2b40.jpg",
+    "description": "Эй, ты. Наконец-то очнулся. Ты пытался пересечь границу, так?",
+    "descriptionPos": "UR",
+    "actions": ["TES horse ride"],
+    "achievements": [4]
+  },
+  {
+    "sceneName": "TES horse ride",
+    "description": "Попутчик заводит разговор с остальными пассажирами."
+  },
+
+  {
+    "sceneName": "TEST"
+  }
+]

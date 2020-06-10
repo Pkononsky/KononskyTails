@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="{{ meta.charset }}"/>
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ meta.description }}"/>
+    <link rel="stylesheet" href="{{ staticBasePath }}scene.css" media="screen"/>
+</head>
+<body>
+<div class="scene-page">
+    {{> logo}}
+    <div class="scene-page__content">
+        {{#if scene.picture}}
+            <div class="scene-page__picture">
+                <img src="{{ scene.picture }}" alt="scene-pic" class="scene-page__img">
+            </div>
+            <div class="scene-page__description">
+                <p class="scene-page__description-text {{scene.descriptionPos}}">
+                    {{ scene.description }}
+                </p>
+            </div>
+        {{else}}
+            <div class="scene-page__description black UL">
+                <p>
+                    {{ scene.description }}
+                </p>
+            </div>
+        {{/if}}
+        <div class="scene-page__achievements">
+            {{#each achievements}}
+                <div class="scene-page__achievement">
+                    <img src="{{ this.picture }}" alt="achievement" class="scene-page__achievement-picture">
+                    <div class="scene-page__achievement-texts">
+                        <p class="scene-page__achievement-get">
+                            Достижение получено
+                        </p>
+                        <p class="scene-page__achievement-name">
+                            {{ this.text }}
+                        </p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+
+        {{#if actions}}
+            <div class="scene-page__buttons">
+                {{#each actions}}
+                    <a href="{{ this.nextScene }}" class="scene-page__button">
+                        <p class="scene-page__button-text">
+                            {{ this.actionRu }}
+                        </p>
+                    </a>
+                {{/each}}
+            </div>
+        {{else}}
+            <div class="scene-page__start-again">
+                <a href="{{ firstScene }}" class="scene-page__button">
+                    <p class="scene-page__button-text">
+                        Начать заново
+                    </p>
+                </a>
+            </div>
+        {{/if}}
+    </div>
+</div>
+</body>
+</html>
