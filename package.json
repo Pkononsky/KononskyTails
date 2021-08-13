@@ -41,7 +41,7 @@
     "isomorphic-fetch": "2.2.1",
     "minimist": "^1.2.5",
     "morgan": "1.9.1",
-    "next": "9.3.4",
+    "next": "11.1.0",
     "pg": "^7.18.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
