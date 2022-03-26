@@ -39,7 +39,7 @@
     "express": "4.17.1",
     "hbs": "4.1.0",
     "isomorphic-fetch": "2.2.1",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "morgan": "1.9.1",
     "next": "9.3.4",
     "pg": "^7.18.2",
